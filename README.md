@@ -30,7 +30,7 @@ This setup requires a number of settings in your _config.yml file. To see how ea
 
 # Example Post YAML
 
-You can choose to include a specific GUID on a podcast episode by including the "podcast_guid" setting for the post. This is helpful when migrating from a different hosting service. This is what allowed me to move mine from WordPress to Jekyll. 
+You can choose to include a specific GUID on a podcast episode by including the "podcast_guid" setting for the post. This is helpful when migrating from a different hosting service. This is what allowed me to move mine from WordPress to Jekyll. It's not required and I usually leave it off.
 
     title:  "Episode Title Goes Here"
     date:   2015-10-20
