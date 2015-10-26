@@ -1,6 +1,18 @@
 # Jekyll Podcast Feed
 
+You can use this feed to host a podcast at iTunes. This setup requires a number of settings in both the main site YAML and each posts YAML. I recommend setting up your server to rewrite index.xml files as a directory index. This makes it possible to use this: http://example.com/feed/podcast
+
+To see an example of this feed in action, here are a few links:
+
+My Jekyll generated site: [http://joebuhlig.com](http://joebuhlig.com)
+
+Podcast episode page: [http://joebuhlig.com/whaddyaknowjoe/](http://joebuhlig.com/whaddyaknowjoe/)
+
+Podcast feed: [http://joebuhlig.com/feed/podcast](http://joebuhlig.com/feed/podcast)
+
 # Example Site Configuration
+
+This setup requires a number of settings in your _config.yml file. To see how each of these are used, you can look through the index.xml file of this repo. 
 
     podcast_url: http://www.joebuhlig.com/whaddyaknowjoe
     podcast_album_art: /assets/base/Whaddya-Know-Joe-Album-Art.png
@@ -18,6 +30,8 @@
 
 # Example Post YAML
 
+You can choose to include a specific GUID on a podcast episode by including the "podcast_guid" setting for the post. This is helpful when migrating from a different hosting service. This is what allowed me to move mine from WordPress to Jekyll. 
+
     title:  "Episode Title Goes Here"
     date:   2015-10-20
     categories: podcast
@@ -31,3 +45,4 @@
     podcast_file_size: 13.7 MB
     podcast_duration: "14:02"
     podcast_length: 13654375
+    podcast_guid: ?p=866
