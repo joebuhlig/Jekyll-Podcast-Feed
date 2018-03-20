@@ -10,6 +10,10 @@ Podcast episode page: [http://joebuhlig.com/whaddyaknowjoe/](http://joebuhlig.co
 
 Podcast feed: [http://joebuhlig.com/feed/podcast](http://joebuhlig.com/feed/podcast)
 
+You can validate and submit your podcast feed for iTunes submission here:
+
+https://podcastsconnect.apple.com/
+
 # Example Site Configuration
 
 This setup requires a number of settings in your _config.yml file. To see how each of these are used, you can look through the index.xml file of this repo. 
@@ -27,6 +31,8 @@ This setup requires a number of settings in your _config.yml file. To see how ea
     podcast_description: Productivity stories from the trenches. What works and what I'll never do again. Hosted by Joe Buhlig.
     podcast_summary: Joe Buhlig walks you through real life story and then breaks down the productivity tools and techniques used. It's a great way to learn how to implement the tips and tricks that you see across the web. Productivity stories from the trenches. What works and what to never try.
     podcast_subtitle: Productivity stories from the trenches. What works and what I'll never do again. Hosted by Joe Buhlig.
+
+Note: `podcast_album_art` is required to be a square image between 1400x1400px and 3000x3000px.
 
 # Example Post YAML
 
@@ -46,3 +52,5 @@ You can choose to include a specific GUID on a podcast episode by including the 
     podcast_duration: "14:02"
     podcast_length: 13654375
     podcast_guid: ?p=866
+    
+`podcast_length` is the size of your `podcast_link` file in bytes.
